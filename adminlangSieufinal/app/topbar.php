@@ -36,6 +36,7 @@
         font-size: 15px;
     }
 
+
     /* Topbar styling */
     .topbar {
         background-color: #00b207;

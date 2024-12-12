@@ -135,7 +135,7 @@
 
 <body style="font-size:15px;">
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" style="width:auto">
         <div class="sidebar-brand">
             <div class="admin-sidebar-top">
                 <img src="img/bglogo.png" alt="Logo">
@@ -166,7 +166,7 @@
                     </li>
                     <li>
                     <li>
-                        <a href="index.php?temp=">
+                        <a href="index.php?temp=chatlieu">
                             <div class="header-account">
                                 Quản lý Chất Liệu
                             </div>

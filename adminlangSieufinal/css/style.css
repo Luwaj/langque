@@ -111,7 +111,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 300px;
+    /* width: 300px; */
     position: fixed;
     left: 0;
     top: 0;
@@ -178,10 +178,12 @@ body {
 
 /* Admin content */
 .admin-content {
-    margin-left: 300px; /* Khoảng cách bằng chiều rộng của sidebar */
+    margin-left: 230px; /* Khoảng cách bằng chiều rộng của sidebar */
     padding: 0px;
     background-color: #f8f9fc;
     min-height: 100vh;
+    width: 80%; /* Điều chỉnh chiều rộng của modal */
+    margin: auto;
 }
 
 .admin-content-main h1 {
