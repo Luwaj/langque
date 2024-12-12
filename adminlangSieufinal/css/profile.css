@@ -1,0 +1,130 @@
+:root {
+    --main-bg-color: #f8f9fc;
+    --card-bg-color: #ffffff;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.admin-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.admin-content {
+    background-image: url('/Backend/image/top-view-desk-dark-concept-with-copy-space.jpg'); /* Đường dẫn đến hình ảnh nền */
+    background-size: cover; /* Để hình ảnh phủ kín toàn bộ phần tử */
+    background-position: center; /* Để căn giữa hình ảnh */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là 100% chiều cao của viewport */
+}
+
+.admin-profile {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-save-profile {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-save-profile:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa các nút */
+    margin-top: 15px; /* Tạo khoảng cách phía trên */
+}
+
+.btn-save-profile {
+    background-color: #28a745; /* Màu xanh cho nút lưu */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+.btn-save-profile:hover {
+    background-color: #218838; /* Màu khi hover */
+}
+
+.btn-logout {
+    background-color: #dc3545; /* Màu đỏ cho nút thoát */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Màu khi hover */
+}
+
+
+@media (max-width: 600px) {
+    .admin-profile {
+        width: 90%;
+    }
+}
