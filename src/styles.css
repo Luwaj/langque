@@ -1,0 +1,223 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Sử dụng font Roboto */
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif; /* Áp dụng cho tiêu đề */
+    font-weight: 700; /* Độ đậm */
+}
+p {
+    font-family: 'Roboto', sans-serif; /* Áp dụng cho đoạn văn */
+}
+span{
+    font-family: 'Roboto', sans-serif; /* Áp dụng cho đoạn văn */
+}
+
+.search-btn {
+    background: none; /* Xóa màu nền */
+    border: none; /* Xóa viền */
+    outline: none; /* Xóa đường viền khi nhấn vào */
+    padding: 0; /* Loại bỏ khoảng cách mặc định */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ tay khi hover */
+}
+
+.search-btn i {
+    font-size: 16px; /* Kích thước biểu tượng */
+    color: #000; /* Màu sắc của biểu tượng */
+}
+
+/* Nếu muốn thêm hiệu ứng khi hover */
+.search-btn:hover i {
+    color: #007bff; /* Thay đổi màu khi hover */
+}
+
+li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif; /* Áp dụng cho đoạn văn */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Thêm bóng viền */
+    background: #FFECC8;
+
+}
+
+.logo > img {
+    flex: 1;
+    width: 100px; /* Đặt chiều rộng tùy ý */
+    height: auto; /* Giữ nguyên tỷ lệ của hình ảnh */
+    display: block; /* Đảm bảo hình ảnh không bị ảnh hưởng bởi khoảng trắng inline */
+    margin: 30px; 
+}
+
+.menu{
+    flex: 3;
+    display: flex;
+    margin: 60px;
+}
+.menu > li{
+    padding: 0 50px;
+    position: relative;
+}
+.menu >li a{
+    text-decoration: none;
+    color: #000;
+}
+.menu > li:hover .sup-menu{
+    display: block;
+}
+.sup-menu {
+    position: absolute;
+    background: white;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 10px;
+    display: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Thêm bóng viền */
+}
+
+.menu > li a{
+    padding: 12px;
+    display:block;
+    line-height: 20px;
+}
+
+.tool{
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+}
+.tool > li{
+    padding:0 5px;
+}
+.tool > li:first-child{
+    position: relative;
+}
+.tool > li:first-child input{
+    width: 190px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: #FFECC8;
+}
+.tool > li:first-child i{
+    position: relative; 
+    right: 20px;
+}
+.slider-container {
+    display: flex; /* Bật Flexbox */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc (nếu cần) */
+    height: 100%; /* Đặt chiều cao cho container nếu cần */
+   
+}
+
+.slider-container > img {
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+
+}
+.tool .account > a i {
+    font-size: 32px; /* Tăng kích thước của biểu tượng */
+    color: #333; /* Màu sắc của biểu tượng */
+}
+
+
+#li-footer-TTLH > li span {
+    margin: 20px;
+    font-style: normal;
+    font-size: 17px;
+}
+#li-footer-TTLH > li  {
+    margin-bottom: 10px;
+}
+
+#p-VCT p{
+    font-size: 17px;
+}
+#li-footer-CSHT > ul li {
+    list-style-type: disc;
+    padding-left: 20px; /* Thụt đầu dòng để disc rõ ràng */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    font-size: 17px; /* Kích thước chữ (tùy chỉnh) */
+    color: #333; /* Màu chữ */
+}
+.top-footer{
+    margin-bottom: 30px;
+
+}
+.col > a i{
+    font-size: 30px; /* Tăng kích thước của biểu tượng */
+    padding: 0px 20px;
+    color: #000; /* Màu sắc của biểu tượng */
+}
+.footer{
+    background: #FFECC8;
+    padding-top: 20px;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng hướng lên */
+}
+#gttq{
+    margin: 50px auto;
+}
+#r-gt1{
+    padding-bottom: 50px;
+}
+#li-gt1 > ul li{
+    list-style-type: disc;
+    font-size: 17px; 
+}
+#img-gt1 > img{
+    width: 650px;
+    height: 470px;
+    object-fit: cover;
+    padding-right: 30px;
+}
+#r-gt2{
+    padding-bottom: 50px;
+}
+#li-gt2 > ul li{
+    list-style-type: disc;
+    font-size: 17px; 
+}
+#img-gt2 > img{
+    width: 650px;
+    height: 460px;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+#li-gt3 > ul li{
+    font-size: 17px; 
+}
+#img-gt3 > img{
+    width: 650px;
+    height: 330px;
+    object-fit: cover;
+    padding-right: 30px;
+}
+#lhtq{
+    margin: 50px auto;
+}
+.infor > p{
+    margin: 0; /* Điều chỉnh khoảng cách trên và dưới mỗi đoạn văn */
+    line-height: 1.5; /* Tăng khoảng cách dòng nếu cần */
+}
+.address{
+    margin-top: 30px;
+}
